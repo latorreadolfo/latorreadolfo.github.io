@@ -7,25 +7,38 @@
         justify-content: center;
     }
 
-    .main-content {
+    .wrapper {
         width: 100%;
         align-items: center;
 
         margin-bottom: 15%;
     }
 
-    main .main-content .text, .techs {
-        text-align: center;
+    main .techs h2 {
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        font-size: 6em;
+        font-family: 'Montserrat', sans-serif;
+        color: #00e0ff;
+    }
+    
+    
+    main .techs .cards-container {
+        margin-top: 15%;  
     }
 
-    main .main-content .text p {
+    main .wrapper .cols p {
         width: 100%;
         font-size: 0.9em;
     }
 
-    main .techs .cards-container, .main-content .text p {
-        margin-top: 32px;
+    main .techs .cards-container .card {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
     }
+
 }
 
 @media (max-width: 700px) {
@@ -49,17 +62,17 @@
         font-size: 1em;
     }
 
+    main .techs .cards-container {
+        margin-top: 25%;
+    }
+
     main .techs .cards-container .card {
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
     }
 
-    main .main-content .text h2, .main-content .techs h2 {
-        font-size: 1.8em;
+    main .techs h2 {
+        font-size: 4em;
     }
 
-    main figure img {
-        width: 200px;
-        height: 200px;
-    }
 }
