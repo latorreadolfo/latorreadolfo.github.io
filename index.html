@@ -14,7 +14,8 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+
     <!-- ICONS -->
     <script src="https://kit.fontawesome.com/349e654ed1.js" crossorigin="anonymous" defer></script>
 </head>
@@ -37,26 +38,44 @@
     </header>
 
     <main>
-        <section class="main-content">
-                <article class="text">
-                    <h2>about me: </h2>
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1>I'm <span class="multiText"></span></h1>
                     <p>
-                        &nbsp;&nbsp;🙋🏽‍♂️&nbsp;&nbsp;&nbsp;&nbsp;Hello, my name is Adolfo, I'm 29 years old, born and raised deep in the countryside of Paraguay. <br />
-                        Graduated in Electrical Engineering in Brazil (CUFAG Cascavel - Parana). <br />
-                        I'd been surrounded by software and web development since the last years of my graduation,<br />
-                         most of my atsmosphere was people involved in to all kind of technollogies,<br />
-                        so was because of that I've jumped into coding studies, since then I've been improving my skills day by day, and I'm just loving so far.
+                        my name is Adolfo, I'm 29 years old, Paraguaian. <br />
+                        Electrical Engineer that fell in love with coding. <br />
+                        I'm an easygoing person, that truly get involved in a team.<br />
+                         Learning, evolving, improving myself every single day.<br />
+                        Most of my knowledge was self-taught, maybe I like the challenge of learning.
                     </p>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                <img src="./img/splash.png" id="splash">
+                <img src="./img/adolfo.jpg" id="profilephoto">
+                </div>
+            </div>
+        </div>
 
-                </article>
+         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+         <script>
+            var typingEffect = new Typed(".multiText", {
+                strings : ["coder", "curious", "adolfo"],
+                loop : true,
+                typeSpeed : 100,
+                backSpeed : 80,
+                backDelay : 1500
+            })
+         </script>
 
-                <aside class="techs">
-                    <h2>👨🏽‍💻 Technollogies</h2>
+            <div class="techs">
+                <h2>techs:</h2>
 
-                    <div class="cards-container">
-                        <div class="card">
-                            <img src="./img/techs/html-logo.png" alt="HTML5 logo">
-                        </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./img/techs/html-logo.png" alt="HTML5 logo">
+                    </div>
 
                         <div class="card">
                             <img src="./img/techs/css-logo.png" alt="CSS3 logo">
@@ -66,19 +85,15 @@
                             <img src="./img/techs/js-logo.png" alt="JS logo">
                         </div>    
 
-                        <div class="card">
-                            <img src="./img/techs/react-logo.png" alt="React logo">
-                        </div>
-
-                        </div>
+                    <div class="card">
+                        <img src="./img/techs/react-logo.png" alt="React logo">
                     </div>
-                </aside>
-        </section>
 
-            <figure>
-                <img src="./img/adolfo.jpg" alt="Adolfo's Profile Picture">
-                <figcaption>Adolfo La Torre</figcaption>
-            </figure>
+                    </div>
+            </div>
+            <div class="spacer">
+                
+            </div>
     </main>
 
     <footer>
