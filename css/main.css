@@ -120,18 +120,17 @@ main .wrapper .imgbox #profilephoto:hover {
 
 main .imgbox #splash {
     position: absolute;
-    bottom: 0%;
-    right: -100%;
+    margin-right: 0%;
+    left: 80%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 70%;
     filter: saturate(200%);
-    animation: animate 30s linear infinite;
+    animation: animate 20s linear infinite;
     z-index: -2;
 }
 
 @keyframes animate{
     50%{
-        right: 50px;
         width: 120%;
     }
 }

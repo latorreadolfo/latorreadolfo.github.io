@@ -62,6 +62,32 @@
         font-size: 1em;
     }
 
+    main .wrapper .cols h1 {
+        font-size: 3.0em;
+        font-weight: 900;
+        margin-bottom: 20%;
+    }
+
+    main .wrapper::before {
+
+        height: 200px;
+        width: 200px;
+
+    }
+    
+    main .wrapper::after {      
+        height: 70px;
+        width: 70px;
+        
+    }
+
+    main .imgbox #splash {
+        bottom: 0%;
+        margin-right: 0%;
+        width: 600px;
+        
+    }
+
     main .techs .cards-container {
         margin-top: 25%;
     }
