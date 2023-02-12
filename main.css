@@ -1,0 +1,192 @@
+/* MAIN CONTENT ============== */
+main .wrapper {
+    display: flex;
+    width: 100%;
+    height: 150vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+main .wrapper .cols h1 {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 7.0em;
+    font-weight: 900;
+    color: #fff;
+}
+
+main .wrapper .cols .multiText {
+    color: #00e0ff;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+main .wrapper .cols .text {
+    margin-bottom: 10%;
+}
+
+main .wrapper .cols .text p {
+    width: 75%;
+    font-family: 'Roboto';
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 3;
+}
+
+main .wrapper::before {
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg, #1c86c7, #00e0ff);
+    animation: object1 6s linear infinite;
+    z-index: -2;
+}
+
+main .wrapper::after {
+    position: absolute;
+    content: '';
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    left: 35%;
+    top: 20%;
+    background: linear-gradient(20deg, #00e0ff, #1c86c7);
+    animation: object2 20s linear infinite;
+}
+
+@keyframes object1 {
+    50%{
+        left: -13%;
+        top: 41%
+    }
+}
+
+@keyframes object2 {
+    50%{
+        left: -15%;
+        top: 40%
+    }
+}
+
+main .wrapper .cols {
+    width:50%;
+}
+
+
+main .wrapper .cols .topline {
+    display: block;
+    position: relative;
+    font-size: 3em;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    color: #eee
+}
+
+main .wrapper .cols .topline::after {
+    position: absolute;
+    padding-right: 1%;
+    content: '';
+    height: 4px;
+    width: 40px;
+    bottom: 10px;
+    background-color: #00e0ff;
+}
+
+main .wrapper .imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+main .wrapper .imgbox #profilephoto {
+    position: relative;
+    height: 120%;
+    width: 120%;
+    left: 55%;
+    border-radius: 50%;
+    border: 2px #00e0ff solid;
+}
+
+main .wrapper .imgbox #profilephoto:hover {
+    box-shadow: 0px 0px 8px #00e0ff;
+}
+
+
+main .imgbox #splash {
+    position: absolute;
+    margin-right: 0%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    filter: saturate(200%);
+    animation: animate 20s linear infinite;
+    z-index: -2;
+}
+
+@keyframes animate{
+    50%{
+        width: 120%;
+    }
+}
+/* CARDS */
+
+main .techs {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+main .techs h2 {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 13em;
+    font-family: 'Montserrat', sans-serif;
+    color: #00e0ff;
+}
+
+
+main .techs .cards-container {
+    margin-top: 20%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+
+}
+
+main .techs .cards-container .card {
+    width: 220px;
+    height: 220px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 8px;
+    margin-right: 0.9em;
+    margin-left: 0.9em;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+main .techs .cards-container .card img {
+    width: 80%;
+    
+}
+
+main .techs .cards-container .card:hover {
+    box-shadow: 0px 0px 28px #00e0ff;
+}
+
+main .spacer {
+    height: 30em;
+}
