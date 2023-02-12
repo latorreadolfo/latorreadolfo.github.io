@@ -62,8 +62,13 @@
         font-size: 1em;
     }
 
+    .wrapper {
+        width: 100%;
+        align-items: center;
+    }
+
     main .wrapper .cols h1 {
-        font-size: 3.0em;
+        font-size: 2.0em;
         font-weight: 900;
         margin-bottom: 20%;
     }
@@ -95,6 +100,8 @@
     main .techs .cards-container .card {
         width: 100px;
         height: 100px;
+        margin-right: 0.1em;
+        margin-left: 0.1em;
     }
 
     main .techs h2 {
